@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-Kematho-Pay</title>
+
+    <!-- Pi SDK -->
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <script>
+      // init Pi SDK for sandbox (testing). For production remove sandbox:true and use developer config.
+      window.addEventListener('load', () => {
+        if (window.Pi && typeof Pi.init === 'function') {
+          try {
+            Pi.init({ version: "2.0", sandbox: true });
+            console.log("✅ Pi SDK initialized (sandbox=true).");
+          } catch (e) {
+            console.error("❌ Pi SDK init error:", e);
+          }
+        } else {
+          console.warn("⚠️ window.Pi tidak tersedia (bukan Pi Browser atau SDK belum dimuat).");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 /**
- * Simple backend for E-Kematho-Lek (Pi SDK demo-style)
+ * Simple backend for e-kmatho-lek (Pi SDK demo-style)
  * - Endpoint: POST /verify  (verifikasi access token dari Pi)
  * - Endpoint: GET /        (health)
  *
@@ -22,7 +22,7 @@ const PORT = process.env.BACKEND_PORT || 5000;
 const VALIDATION_KEY_PATH = process.env.VALIDATION_KEY_PATH || path.join(__dirname, 'validation-key.txt');
 
 app.get('/', (req, res) => {
-  res.send('💜 E-Kematho-Pay API aktif dan berjalan.');
+  res.send('💜 e-kematho-lek API aktif dan berjalan.');
 });
 
 // POST /verify
@@ -47,7 +47,7 @@ app.post('/verify', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 E-Kematho-Lek API berjalan di port ${PORT}`);
+  console.log(`🚀 e-kematho-lek API berjalan di port ${PORT}`);
   // warn if validation-key not present (portal will give you this file after registering app)
   if (!fs.existsSync(VALIDATION_KEY_PATH)) {
     console.warn('⚠️ validation-key.txt TIDAK DITEMUKAN. Letakkan file dari Pi Developer Portal di:', VALIDATION_KEY_PATH);

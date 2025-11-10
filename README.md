@@ -1,4 +1,4 @@
-E-Kematho-Pay (demo)
+E-Kematho-Lek (demo)
 Frontend: React + Pi SDK (sandbox-ready)
 Backend: Express API (verify token)
 

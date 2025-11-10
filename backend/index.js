@@ -1,5 +1,5 @@
 /**
- * Simple backend for e-kmatho-lek (Pi SDK demo-style)
+ * Simple backend for e-kematho-lek (Pi SDK demo-style)
  * - Endpoint: POST /verify  (verifikasi access token dari Pi)
  * - Endpoint: GET /        (health)
  *
